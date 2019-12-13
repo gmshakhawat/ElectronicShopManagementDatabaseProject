@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPnae" prefHeight="305.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dbms.ItemFXMLController">
+   <children>
+      <ImageView fitHeight="332.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BItem.jpg" />
+         </image>
+      </ImageView>
+      <Pane fx:id="p1" prefHeight="124.0" prefWidth="400.0">
+         <children>
+            <ImageView pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@TaddItem.jpg" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="p2" layoutY="124.0" prefHeight="199.0" prefWidth="400.0">
+         <children>
+            <JFXButton fx:id="b1" buttonType="RAISED" layoutX="146.0" layoutY="20.0" onAction="#buttonhandle1" prefHeight="63.0" prefWidth="102.0" style="-fx-background-color: #560c59;" text="Add Item" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="b2" layoutX="146.0" layoutY="128.0" onAction="#handlebutton2" prefHeight="63.0" prefWidth="102.0" style="-fx-background-color: #560c59;" text="Remove Item" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font></JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

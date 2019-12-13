@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dbms.CategoryFXMLController">
+   <children>
+      <ImageView pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Backgound2.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="147.0" prefWidth="600.0">
+         <children>
+            <ImageView layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Tcategory.jpg" />
+               </image></ImageView>
+         </children>
+      </Pane>
+      <Pane layoutY="147.0" prefHeight="403.0" prefWidth="600.0">
+         <children>
+            <JFXButton fx:id="addCategory" buttonType="RAISED" layoutX="243.0" layoutY="14.0" onAction="#ButtonHandleAction" prefHeight="46.0" prefWidth="120.0" style="-fx-background-color: #560c59;" text="Add Category" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></JFXButton>
+            <TableView fx:id="tableCategory" layoutX="91.0" layoutY="85.0" prefHeight="200.0" prefWidth="405.0">
+              <columns>
+                <TableColumn fx:id="col1" prefWidth="41.0" text="S.no" />
+                <TableColumn fx:id="col2" prefWidth="218.0" text="Category Name" />
+                  <TableColumn fx:id="col3" prefWidth="145.0" text="Total Quantity" />
+              </columns>
+            </TableView>
+            <JFXButton fx:id="remove" buttonType="RAISED" layoutX="395.0" layoutY="315.0" onAction="#ButtonHandleAction" prefHeight="46.0" prefWidth="101.0" style="-fx-background-color: #560c59;" text="Remove" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="refresh" buttonType="RAISED" layoutX="91.0" layoutY="315.0" onAction="#ButtonHandleAction" prefHeight="46.0" prefWidth="101.0" style="-fx-background-color: #560c59;" text="Refresh" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font></JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

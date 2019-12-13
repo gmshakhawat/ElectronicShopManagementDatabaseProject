@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dbms.WarrantyController">
+   <children>
+      <ImageView pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Backgound2Warranty.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="220.0" prefWidth="679.0">
+         <children>
+            <ImageView pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Twarranty.jpg" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane layoutX="4.0" layoutY="222.0" prefHeight="376.0" prefWidth="669.0">
+         <children>
+            <JFXButton fx:id="add" disable="true" layoutX="551.0" layoutY="120.0" onAction="#OnMouseClickAdd" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: #560c59;" text="Add" textFill="WHITE" wrapText="true" />
+            <JFXTextField fx:id="bill_id" layoutX="51.0" layoutY="72.0" promptText="Bill ID" />
+            <JFXButton fx:id="search" layoutX="218.0" layoutY="72.0" onAction="#OnMouseClick" prefHeight="25.0" prefWidth="71.0" ripplerFill="#4283b5" style="-fx-background-color: #560c59;" text="Search" textFill="WHITE" />
+            <Label fx:id="label_prdct" layoutX="54.0" layoutY="124.0" prefHeight="17.0" prefWidth="105.0" />
+            <Label fx:id="label_name" layoutX="186.0" layoutY="124.0" prefHeight="17.0" prefWidth="105.0" />
+            <Label fx:id="label_date" layoutX="306.0" layoutY="124.0" prefHeight="17.0" prefWidth="99.0" />
+            <JFXComboBox fx:id="drop_down" layoutX="430.0" layoutY="120.0" prefHeight="25.0" prefWidth="105.0" promptText="Product Status" visibleRowCount="3" />
+            <TableView fx:id="table" editable="true" fixedCellSize="20.0" layoutY="176.0" prefHeight="173.0" prefWidth="669.0">
+              <columns>
+                <TableColumn fx:id="col_billid" prefWidth="126.0" text="Bill ID" />
+                <TableColumn fx:id="col_prdct" prefWidth="110.0" text="Product" />
+                  <TableColumn fx:id="col_owner" minWidth="0.0" prefWidth="156.0" text="Owner Name" />
+                  <TableColumn fx:id="col_date" prefWidth="130.0" text="Date" />
+                  <TableColumn fx:id="col_warranty" prefWidth="145.0" text="Warranty Status " />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+   <opaqueInsets>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </opaqueInsets>
+</AnchorPane>

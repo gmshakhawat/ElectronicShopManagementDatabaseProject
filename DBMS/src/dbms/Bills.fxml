@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="BillsMainPane" prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dbms.BillsController">
+   <children>
+      <ImageView pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Backgound2.jpg" />
+         </image>
+      </ImageView>
+      <Pane fx:id="BillsTopPane" prefHeight="147.0" prefWidth="600.0">
+         <children>
+            <ImageView pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Tsales.jpg" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="BillsBottomPane" layoutY="147.0" prefHeight="403.0" prefWidth="600.0">
+         <children>
+            <JFXTextField fx:id="ProductIdTextField" focusColor="#a842a1" labelFloat="true" layoutX="14.0" layoutY="31.0" prefHeight="46.0" prefWidth="252.0" promptText="Enter Bill Id" unFocusColor="#cdc751">
+               <font>
+                  <Font name="Abyssinica SIL" size="22.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="ProductIdButton" buttonType="RAISED" layoutX="284.0" layoutY="31.0" onAction="#SearchByIdAction" prefHeight="46.0" prefWidth="181.0" ripplerFill="#3b278a" style="-fx-background-color: #560c59;" text="SEARCH BY BlLL ID" textFill="WHITE" />
+            <JFXButton fx:id="DateButton" buttonType="RAISED" layoutX="284.0" layoutY="126.0" onAction="#SearchByDateAction" prefHeight="46.0" prefWidth="181.0" style="-fx-background-color: #560c59;" text="SEARCH BY DATE" textFill="WHITE" />
+            <TableView fx:id="BillsTable" layoutY="190.0" prefHeight="212.0" prefWidth="600.0">
+              <columns>
+                <TableColumn fx:id="BillsProductIdCol" prefWidth="62.0" text="Bill ID" />
+                <TableColumn fx:id="BillsProductNameCol" prefWidth="90.0" text="Product" />
+                  <TableColumn fx:id="BillsCustomerNameCol" prefWidth="98.0" text="Customer" />
+                  <TableColumn fx:id="BillsCustomerAddrCol" prefWidth="105.0" text="ADDRESS" />
+                  <TableColumn fx:id="BillsContactCol" prefWidth="77.0" text="Mob No." />
+                  <TableColumn fx:id="BillsDateCol" minWidth="0.0" prefWidth="86.0" text="DATE" />
+                  <TableColumn fx:id="EmpIdCol" prefWidth="81.0" text="EmpID" />
+              </columns>
+            </TableView>
+            <DatePicker fx:id="BillsDate" layoutX="14.0" layoutY="126.0" prefHeight="46.0" prefWidth="252.0" promptText="Select Date" style="-fx-background-color: #a842a1;" />
+            <JFXButton fx:id="RefreshButton" buttonType="RAISED" layoutX="475.0" layoutY="31.0" onAction="#RefreshAction" prefHeight="46.0" prefWidth="111.0" ripplerFill="#3b278a" style="-fx-background-color: #560c59;" text="REFRESH" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

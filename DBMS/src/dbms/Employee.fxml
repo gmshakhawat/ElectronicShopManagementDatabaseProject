@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="EmpMAinPane" prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dbms.EmployeeController">
+   <children>
+      <ImageView pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Backgound2.jpg" />
+         </image>
+      </ImageView>
+      <Pane fx:id="EmpPaneTop" prefHeight="147.0" prefWidth="600.0">
+         <children>
+            <ImageView pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Temployee.jpg" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="EmpPaneBottom" layoutY="147.0" prefHeight="403.0" prefWidth="600.0">
+         <children>
+            <JFXButton fx:id="AddEmpButton" buttonType="RAISED" layoutX="27.0" layoutY="36.0" onAction="#AddEmpAction" prefHeight="43.0" prefWidth="166.0" ripplerFill="#57c318" style="-fx-background-color: #560c59;" text="Add Employee" textFill="WHITE">
+               <font>
+                  <Font name="Abyssinica SIL" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="RemoveEmpButton" buttonType="RAISED" layoutX="217.0" layoutY="36.0" onAction="#RemEmpAction" prefHeight="43.0" prefWidth="166.0" ripplerFill="#d03613" style="-fx-background-color: #560c59;" text="Remove Employee" textFill="WHITE">
+               <font>
+                  <Font name="Abyssinica SIL" size="17.0" />
+               </font>
+            </JFXButton>
+            <TableView fx:id="EmpTable" layoutY="102.0" prefHeight="299.0" prefWidth="600.0">
+              <columns>
+                <TableColumn fx:id="EmpIdCol" prefWidth="75.0" text="EMP_ID" />
+                <TableColumn fx:id="EmpNameCol" prefWidth="126.0" text="NAME" />
+                  <TableColumn fx:id="EmpGenderCol" prefWidth="71.0" text="GENDER" />
+                  <TableColumn fx:id="EmpAddrCol" prefWidth="108.0" text="Address" />
+                  <TableColumn fx:id="EmpContact" prefWidth="101.0" text="Mob No." />
+                  <TableColumn fx:id="AdhaarCol" prefWidth="118.0" text="Adhaar No." />
+              </columns>
+            </TableView>
+            <JFXButton fx:id="Refreshbutton" buttonType="RAISED" layoutX="406.0" layoutY="36.0" onAction="#RefreshAction" prefHeight="43.0" prefWidth="166.0" ripplerFill="#d03613" style="-fx-background-color: #560c59;" text="Refresh" textFill="WHITE">
+               <font>
+                  <Font name="Abyssinica SIL" size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

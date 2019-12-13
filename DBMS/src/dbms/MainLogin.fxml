@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dbms.MainLoginController">
+   <children>
+      <ImageView pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Backgound2.jpg" />
+         </image>
+      </ImageView>
+      <Pane fx:id="BottomPane" prefHeight="550.0" prefWidth="600.0">
+         <children>
+            <JFXTextField fx:id="UserName" focusColor="#40a85d" labelFloat="true" layoutX="159.0" layoutY="211.0" prefHeight="44.0" prefWidth="282.0" promptText="Username" unFocusColor="#e442e1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="LoginButton" buttonType="RAISED" layoutX="166.0" layoutY="409.0" onAction="#loginclicked" prefHeight="44.0" prefWidth="89.0" ripplerFill="#12d740" style="-fx-background-color: #9b42f4;" text="LOGIN">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXPasswordField fx:id="Password" focusColor="#40a85d" labelFloat="true" layoutX="159.0" layoutY="324.0" prefHeight="44.0" prefWidth="282.0" promptText="Password" unFocusColor="#e442e1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXPasswordField>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@login_icon.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="ForgotPassword" layoutX="311.0" layoutY="409.0" onAction="#ForgorPasswordAction" prefHeight="44.0" prefWidth="155.0" ripplerFill="#12d740" text="Forget Password?">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

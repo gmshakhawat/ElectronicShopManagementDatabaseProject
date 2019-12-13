@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dbms.PaymentController">
+   <children>
+      <ImageView pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Backgound2.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="147.0" prefWidth="600.0">
+         <children>
+            <ImageView pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Tpayments.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutY="147.0" prefHeight="403.0" prefWidth="600.0">
+         <children>
+            <JFXTextField fx:id="text_bill" labelFloat="true" layoutX="84.0" layoutY="35.0" prefHeight="26.0" prefWidth="142.0" promptText="Bill ID">
+               <font>
+                  <Font name="Algerian" size="15.0" />
+               </font>
+            </JFXTextField>
+            <TableView fx:id="table" layoutY="133.0" prefHeight="270.0" prefWidth="600.0">
+              <columns>
+                <TableColumn fx:id="col_bill" prefWidth="259.0" text="Bill_ID" />
+                <TableColumn fx:id="col_paymode" prefWidth="340.0" text="Payment Mode" />
+              </columns>
+            </TableView>
+            <JFXButton fx:id="search" buttonType="RAISED" layoutX="258.0" layoutY="88.0" onAction="#OnClick" prefHeight="25.0" prefWidth="158.0" ripplerFill="#c92c2c" style="-fx-background-color: #560c59;" text="Search by payment mode" textFill="WHITE" />
+            <JFXButton fx:id="searchID" layoutX="258.0" layoutY="35.0" onAction="#OnClickbill" prefHeight="25.0" prefWidth="142.0" style="-fx-background-color: #560c59;" text="Search by BILL ID" textFill="WHITE" />
+            <JFXTextField fx:id="text_payment" labelFloat="true" layoutX="84.0" layoutY="88.0" promptText="Payment Mode">
+               <font>
+                  <Font name="Algerian" size="15.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="305.0" prefWidth="388.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dbms.AddCategoryFXMLDocumentController">
+   <children>
+      <ImageView pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Bcategory.jpg" />
+         </image>
+      </ImageView>
+      <Pane fx:id="Pane1" prefHeight="108.0" prefWidth="388.0">
+         <children>
+            <ImageView fx:id="Pane1Image" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@TaddCategory.jpg" />
+               </image></ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="Pane2" layoutY="108.0" prefHeight="197.0" prefWidth="388.0">
+         <children>
+            <JFXTextField fx:id="CategoryText" layoutX="167.0" layoutY="35.0" prefHeight="25.0" prefWidth="196.0" />
+            <Label fx:id="CategoryLabel" layoutX="11.0" layoutY="31.0" prefHeight="33.0" prefWidth="136.0" text="Category Name">
+               <font>
+                  <Font name="Arial" size="17.0" />
+               </font></Label>
+            <JFXButton fx:id="CategoryButton" buttonType="RAISED" layoutX="123.0" layoutY="102.0" onAction="#ButtonHandle" prefHeight="33.0" prefWidth="93.0" style="-fx-background-color: #560c59;" text="Add Category" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

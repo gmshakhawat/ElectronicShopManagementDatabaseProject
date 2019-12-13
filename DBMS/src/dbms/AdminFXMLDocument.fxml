@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dbms.AdminDocumentController">
+   <children>
+      <ImageView fx:id="ali" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@background.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="b1" alignment="CENTER" layoutX="107.0" layoutY="162.0" mnemonicParsing="false" onAction="#buttonhandle1" textAlignment="CENTER">
+         <graphic>
+            <ImageView fx:id="bi1" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@products.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="b2" alignment="CENTER" layoutX="316.0" layoutY="162.0" mnemonicParsing="false" onAction="#buttonhandle2" prefHeight="90.0" prefWidth="152.0" textAlignment="CENTER">
+         <graphic>
+            <ImageView fx:id="bi2" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@categories-thumb-1470x940.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="b3" alignment="CENTER" layoutX="529.0" layoutY="162.0" mnemonicParsing="false" onAction="#buttonhandle3" prefHeight="90.0" prefWidth="152.0" textAlignment="CENTER">
+         <graphic>
+            <ImageView fx:id="bi3" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@items.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="b4" alignment="CENTER" layoutX="107.0" layoutY="292.0" mnemonicParsing="false" onAction="#buttonhandle4" prefHeight="90.0" prefWidth="152.0" textAlignment="CENTER">
+         <graphic>
+            <ImageView fx:id="bi4" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Employees.JPG" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="b5" alignment="CENTER" layoutX="316.0" layoutY="292.0" mnemonicParsing="false" onAction="#buttonhandle5" prefHeight="90.0" prefWidth="152.0" textAlignment="CENTER">
+         <graphic>
+            <ImageView fx:id="bi5" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Blls.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="b6" alignment="CENTER" layoutX="529.0" layoutY="292.0" mnemonicParsing="false" onAction="#buttonhandle6" prefHeight="90.0" prefWidth="152.0" textAlignment="CENTER">
+         <graphic>
+            <ImageView fx:id="bi6" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@purchases.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="b7" alignment="CENTER" layoutX="107.0" layoutY="424.0" mnemonicParsing="false" onAction="#buttonhandle7" prefHeight="90.0" prefWidth="152.0" textAlignment="CENTER">
+         <graphic>
+            <ImageView fx:id="bi7" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Sales.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="b8" alignment="CENTER" layoutX="316.0" layoutY="424.0" mnemonicParsing="false" onAction="#buttonhandle8" prefHeight="98.0" prefWidth="168.0" textAlignment="CENTER">
+         <graphic>
+            <ImageView fx:id="bi8" fitHeight="68.0" fitWidth="155.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Warranty.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="b9" alignment="CENTER" layoutX="529.0" layoutY="424.0" mnemonicParsing="false" onAction="#buttonhandle9" prefHeight="98.0" prefWidth="168.0" textAlignment="CENTER">
+         <graphic>
+            <ImageView fx:id="bi9" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@payments-icon-21.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="l1" layoutX="14.0" layoutY="2.0" prefHeight="128.0" prefWidth="750.0">
+         <graphic>
+            <ImageView fx:id="li1" fitHeight="74.0" fitWidth="778.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@AdminDash.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <JFXButton fx:id="logout" layoutX="690.0" layoutY="550.0" onAction="#buttonhandlelogout" prefHeight="38.0" prefWidth="88.0" style="-fx-background-color: #560c59;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

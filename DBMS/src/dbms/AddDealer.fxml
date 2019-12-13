@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="AddDealerMainPane" prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dbms.AddDealerController">
+   <children>
+      <ImageView pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Backgound2.jpg" />
+         </image>
+      </ImageView>
+      <Pane fx:id="AddDealerTopPane" prefHeight="147.0" prefWidth="600.0">
+         <children>
+            <ImageView pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Tdealer.jpg" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane fx:id="AddDealerBottomPane" layoutY="147.0" prefHeight="403.0" prefWidth="600.0">
+         <children>
+            <JFXTextField fx:id="DealerMobNo" focusColor="#853fa8" labelFloat="true" layoutX="53.0" layoutY="126.0" prefHeight="39.0" prefWidth="253.0" promptText="Mobile No." unFocusColor="#89b50f">
+               <font>
+                  <Font name="Abyssinica SIL" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="DealerGenderDrop" layoutX="442.0" layoutY="51.0" prefHeight="39.0" prefWidth="139.0" promptText="SELECT" visibleRowCount="2" />
+            <Label fx:id="DealerGender" layoutX="328.0" layoutY="51.0" prefHeight="39.0" prefWidth="90.0" text="GENDER" textFill="#853fa8" wrapText="true">
+               <font>
+                  <Font name="Abyssinica SIL" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="DealerName" focusColor="#853fa8" labelFloat="true" layoutX="53.0" layoutY="51.0" prefHeight="39.0" prefWidth="253.0" promptText="Name" unFocusColor="#89b50f">
+               <font>
+                  <Font name="Abyssinica SIL" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="SubmitButton" buttonType="RAISED" layoutX="237.0" layoutY="335.0" onAction="#SubmitAction" prefHeight="43.0" prefWidth="139.0" ripplerFill="#cf3b25" style="-fx-background-color: #9375ff;" text="SUBMIT" textFill="WHITE">
+               <font>
+                  <Font name="Abyssinica SIL" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="DealerTinNo" focusColor="#853fa8" labelFloat="true" layoutX="328.0" layoutY="126.0" prefHeight="39.0" prefWidth="253.0" promptText="Tin No." unFocusColor="#89b50f">
+               <font>
+                  <Font name="Abyssinica SIL" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextArea fx:id="DealerAddr" focusColor="#853fa8" labelFloat="true" layoutX="138.0" layoutY="213.0" prefHeight="89.0" prefWidth="336.0" promptText="Address" unFocusColor="#89b50f">
+               <font>
+                  <Font name="Abyssinica SIL" size="20.0" />
+               </font>
+            </JFXTextArea>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

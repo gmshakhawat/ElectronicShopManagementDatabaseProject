@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="544.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dbms.Bills1Controller">
+   <children>
+      <ImageView layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Backgound2Bills.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="147.0" prefWidth="700.0">
+         <children>
+            <ImageView pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Tbills.jpg" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane layoutY="144.0" prefHeight="398.0" prefWidth="700.0">
+         <children>
+            <JFXTextField fx:id="phone_no" layoutX="237.0" layoutY="259.0" prefHeight="25.0" prefWidth="262.0" promptText="PHONE NO." />
+            <JFXTextField fx:id="address" layoutX="239.0" layoutY="166.0" prefHeight="25.0" prefWidth="262.0" promptText="ADDRESS" />
+            <Button fx:id="generate_bill" layoutX="522.0" layoutY="338.0" mnemonicParsing="false" onAction="#OnMouseClick" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #560c59;" text="GENERATE BILL" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <JFXTextField fx:id="cust_name" layoutX="242.0" layoutY="79.0" prefHeight="25.0" prefWidth="255.0" promptText="CUSTOMER NAME" />
+            <JFXTextField fx:id="product_id" editable="false" layoutX="242.0" layoutY="40.0" prefHeight="25.0" prefWidth="255.0" />
+            <DatePicker fx:id="date" layoutX="233.0" layoutY="220.0" prefHeight="25.0" prefWidth="135.0" />
+            <Label fx:id="billField" layoutX="79.0" layoutY="40.0" prefHeight="25.0" prefWidth="135.0" text="Bill ID" />
+            <Label fx:id="itemfield" layoutX="79.0" layoutY="117.0" prefHeight="25.0" prefWidth="135.0" text="Purchased Item" />
+            <Label fx:id="addressfield" layoutX="79.0" layoutY="166.0" prefHeight="25.0" prefWidth="135.0" text="Address" />
+            <Label fx:id="datefield" layoutX="79.0" layoutY="220.0" prefHeight="25.0" prefWidth="135.0" text="Date" />
+            <Label fx:id="contactfield" layoutX="79.0" layoutY="259.0" prefHeight="25.0" prefWidth="135.0" text="Contact Number" />
+            <Label fx:id="Namefield" layoutX="79.0" layoutY="79.0" prefHeight="25.0" prefWidth="135.0" text="Name" />
+            <JFXComboBox fx:id="cb1" layoutX="242.0" layoutY="117.0" onAction="#combohandle" prefHeight="25.0" prefWidth="116.0" promptText="Category" />
+            <JFXComboBox fx:id="cb2" layoutX="383.0" layoutY="117.0" onAction="#combohandle1" prefHeight="25.0" prefWidth="107.0" promptText="Product" />
+            <JFXComboBox fx:id="cb3" layoutX="514.0" layoutY="117.0" onAction="#combohandle3" promptText="Unit" />
+            <Label fx:id="totalfield" layoutX="79.0" layoutY="297.0" prefHeight="25.0" prefWidth="135.0" text="Total" />
+            <JFXTextField fx:id="total" editable="false" layoutX="237.0" layoutY="297.0" prefHeight="25.0" prefWidth="262.0" />
+            <Label fx:id="datefield1" layoutX="383.0" layoutY="220.0" prefHeight="25.0" prefWidth="78.0" text="Employee Id" />
+            <JFXComboBox fx:id="cb4" layoutX="490.0" layoutY="220.0" promptText="Unit" />
+            <Label fx:id="totalfield1" layoutX="79.0" layoutY="340.0" prefHeight="25.0" prefWidth="135.0" text="Payment Mode" />
+            <JFXTextField fx:id="payment" layoutX="239.0" layoutY="340.0" prefHeight="25.0" prefWidth="262.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dbms.itemaddController">
+   <children>
+      <ImageView pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Backgound2.jpg" />
+         </image>
+      </ImageView>
+      <Pane fx:id="Pane1" prefHeight="147.0" prefWidth="600.0">
+         <children>
+            <ImageView fx:id="Pane1Image" layoutX="1.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Titem.png" />
+               </image></ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="Pane2" layoutY="147.0" prefHeight="403.0" prefWidth="600.0">
+         <children>
+            <JFXComboBox fx:id="cb1" layoutX="196.0" layoutY="19.0" prefHeight="25.0" prefWidth="181.0" promptText="Select Product Category" />
+            <Label fx:id="l1" layoutX="14.0" layoutY="22.0" prefHeight="33.0" prefWidth="150.0" text="Select Product" />
+            <JFXTextField fx:id="f1" layoutX="193.0" layoutY="63.0" prefHeight="25.0" prefWidth="181.0" />
+            <JFXButton fx:id="b1" buttonType="RAISED" layoutX="239.0" layoutY="313.0" onAction="#handlebutton" prefHeight="33.0" prefWidth="109.0" style="-fx-background-color: #560c59;" text="Add Item" textFill="WHITE" />
+            <Label fx:id="l2" layoutX="14.0" layoutY="63.0" prefHeight="44.0" prefWidth="150.0" text="Company Name" />
+            <Label fx:id="l3" layoutX="14.0" layoutY="108.0" prefHeight="44.0" prefWidth="150.0" text="Product Name" />
+            <JFXTextField fx:id="f2" layoutX="193.0" layoutY="110.0" prefHeight="25.0" prefWidth="181.0" />
+            <Label fx:id="l4" layoutX="14.0" layoutY="152.0" prefHeight="44.0" prefWidth="150.0" text="Dealer Id" />
+            <JFXComboBox fx:id="cb2" layoutX="193.0" layoutY="160.0" prefHeight="25.0" prefWidth="174.0" promptText="Select Dealer Id" />
+            <Label fx:id="l5" layoutX="14.0" layoutY="206.0" prefHeight="44.0" prefWidth="150.0" text="Quantity" />
+            <JFXTextField fx:id="f3" layoutX="193.0" layoutY="209.0" prefHeight="25.0" prefWidth="174.0" />
+            <Label fx:id="l6" layoutX="14.0" layoutY="250.0" prefHeight="44.0" prefWidth="150.0" text="Price Per Product" />
+            <JFXTextField fx:id="f4" layoutX="193.0" layoutY="260.0" prefHeight="25.0" prefWidth="174.0" />
+            <DatePicker fx:id="datepick" layoutX="398.0" layoutY="160.0" />
+            <Label fx:id="l11" layoutX="385.0" layoutY="15.0" prefHeight="33.0" prefWidth="36.0" text="Bill Id" />
+            <JFXTextField fx:id="f11" editable="false" layoutX="429.0" layoutY="19.0" prefHeight="25.0" prefWidth="126.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dbms.ProductFXMLDocumentController">
+   <children>
+      <ImageView pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Backgound2.jpg" />
+         </image>
+      </ImageView>
+      <Pane fx:id="Pane1" prefHeight="147.0" prefWidth="600.0">
+         <children>
+            <ImageView fx:id="Pane1Image" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Tproducts.jpg" />
+               </image></ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="Pane2" layoutY="147.0" prefHeight="403.0" prefWidth="600.0">
+         <children>
+            <JFXComboBox fx:id="productChoice" labelFloat="true" layoutX="170.0" layoutY="50.0" onAction="#searchHandle" prefHeight="40.0" prefWidth="244.0" promptText="Select Product" />
+            <TableView fx:id="productTable" fixedCellSize="20.0" layoutY="116.0" onSort="#productTableHandle" prefHeight="289.0" prefWidth="600.0">
+              <columns>
+                <TableColumn fx:id="TableSno" prefWidth="39.0" text="S.No" />
+                <TableColumn fx:id="TableCname" minWidth="0.0" prefWidth="105.0" text="Company Name" />
+                  <TableColumn fx:id="TablePname" minWidth="1.0" prefWidth="158.0" text="Product Name" />
+                  <TableColumn fx:id="TableQuantity" prefWidth="61.0" text="Quantity" />
+                  <TableColumn fx:id="TablePrice" prefWidth="109.0" text="Price Per Product" />
+                  <TableColumn fx:id="TableDId" prefWidth="126.0" text="Dealer Id" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
